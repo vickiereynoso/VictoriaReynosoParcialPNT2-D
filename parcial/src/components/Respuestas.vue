@@ -1,7 +1,25 @@
 <template>
 
   <section class="src-components-respuestas">
-    <h1>src-components-respuestas Component</h1>
+    <div class="jumbotron">
+      <h2>Respuestas</h2>
+      <hr>
+      <br>
+
+      <div class="table-responsive">
+        <table class="table table-dark">
+          <tr>
+            <th>Numero de pregunta</th>
+            <th>Respuesta</th>
+          </tr>
+          <tr v-for="(pregunta, index) in preguntas" :key="index">
+            <td>{{pregunta.numero}}</td>
+            <td>{{pregunta.respuestas}}</td>
+          </tr>
+        </table>
+      </div>      
+
+    </div>
   </section>
 
 </template>
@@ -16,7 +34,11 @@
     },
     data () {
       return {
-
+          preguntas : [ 
+            { numero: 1, respuestas: ['c'] },
+            { numero: 2, respuestas: ['c'] },
+            { numero: 3, respuestas: ['b'] }
+          ]
       }
     },
     methods: {

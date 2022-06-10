@@ -1,15 +1,15 @@
 <template>
   <div id="app" class="container-fluid mt-3">
       <div class="jumbotron">
-      <!-- <Navbar />
-      <router-view></router-view> -->
+      <Navbar />
+      <router-view></router-view>
       </div>
   </div>
 </template>
 
 <script>
 //import HelloWorld from './components/HelloWorld.vue'
-import Navbar from './componentes/Navbar.vue'
+import Navbar from './components/Navbar.vue'
 
 export default {
   name: 'App',
