@@ -88,9 +88,6 @@
       <hr>
       <hr>
 
-
-
-
      
       <h2>Historial de Notas</h2>
       <hr>
@@ -159,7 +156,8 @@ getInitialData() {
         this.alumnos.forEach(alumno => {
           total += alumno.nota
         });
-      
+
+       total= total/this.alumnos.length
 
         let color = ''
         if((total>=0) && (total<4)) color = 'red'
